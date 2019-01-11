@@ -72,7 +72,7 @@ if [ -z ${SKIPDOWNLOAD+x} ]; then
   echo Deleting existing \'$DISCOVERY_DOC_DIR\' directory...
   rm -rf $DISCOVERY_DOC_DIR
   # Download all discovery docs
-  python -u get_discovery_documents.py --destination_dir $DISCOVERY_DOC_DIR
+  C:/Python27/python -u get_discovery_documents.py --destination_dir $DISCOVERY_DOC_DIR
   # Patch discovery docs
   dotnet run --project $TOOLS_DIR/DiscoveryDocPatcher/DiscoveryDocPatcher.csproj -- $DISCOVERY_DOC_DIR
 fi
@@ -92,7 +92,7 @@ if [ -z ${SKIPGENERATE+x} ]; then
         ;;
       *)
         echo Generating: \'$name\'
-        python -uR $(pwd)/ClientGenerator/src/googleapis/codegen/generate_library.py --input="$jsonfile" --language=csharp --output_dir="$CODE_GENERATION_DIR"
+        C:/Python27/python -uR $(pwd)/ClientGenerator/src/googleapis/codegen/generate_library.py --input="$jsonfile" --language=csharp --output_dir="$CODE_GENERATION_DIR"
         ;;
     esac
   done
