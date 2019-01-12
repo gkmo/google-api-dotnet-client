@@ -1486,6 +1486,11 @@ namespace Google.Apis.PhotosLibrary.v1.Data
         [Newtonsoft.Json.JsonPropertyAttribute("description")]
         public virtual string Description { get; set; } 
 
+        /// <summary>The filename of the media item shown to the user in the Google Photos app (within the item's info
+        /// section).</summary>
+        [Newtonsoft.Json.JsonPropertyAttribute("filename")]
+        public virtual string Filename { get; set; } 
+
         /// <summary>Identifier for the media item. This is a persistent identifier that can be used between sessions to
         /// identify this media item.</summary>
         [Newtonsoft.Json.JsonPropertyAttribute("id")]

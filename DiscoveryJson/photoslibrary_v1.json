@@ -541,6 +541,10 @@
           "type": "string",
           "description": "Description of the media item. This is shown to the user in the item's\ninfo section in the Google Photos app."
         },
+        "filename": {
+          "type": "string",
+          "description": "The filename of the media item shown to the user in the Google Photos app (within the item's info section)."
+        },
         "mediaMetadata": {
           "description": "Metadata related to the media item, for example the height, width or\ncreation time.",
           "$ref": "MediaMetadata"
